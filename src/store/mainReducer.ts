@@ -6,8 +6,10 @@ function mainReducer (state: IAppState = defaultState, action: AppActions): IApp
 
     switch(action.type) {
         case ADD_ARTICLE:
+            // Create a brand new array and object.  React only does a shallow compare,
+            // so if the array object itself doesn't get replaced, the CardList won't re-render.
             let newArray = [...state.cards, action.article];
-            state = {cards: newArray}
+            state = { cards: newArray }
             break;
     }
     

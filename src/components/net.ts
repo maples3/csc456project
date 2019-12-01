@@ -25,6 +25,11 @@ import { addArticle } from '../store/actionGenerators';
 //     }
 // }
 
+
+/*
+ * See comments in LoadButton.tsx 
+ */
+
 export function fetchArticle() {
     return function(dispatch: any) {
         return fetch('https://en.wikipedia.org/api/rest_v1/page/random/summary')

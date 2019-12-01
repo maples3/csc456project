@@ -17,6 +17,16 @@ class LoadButton extends React.Component<LoadButtonProps> {
         </div>;
     }
 
+
+    /**
+     * It's late-o'clock on a weekend and for some reason, neither the above or below functions will work
+     * with Thunk to actually call the function that gets returned.
+     * So I just shoved the HTTP call into the LoadButton component itself :)
+     * It's definitely hacky and wouldn't go over well in the real world.  But also in the real world,
+     * I'd hopefully have better resources, like another dev who's worked with Thunk before and can tell
+     * me if I'm remotely close to doing it right.  There are not a whole lot of tutorials out there
+     * that incorporate both Thunk and TypeScript :/
+     */
     handleClick(evt: React.MouseEvent) {
         // fetchArticle();
         fetch('https://en.wikipedia.org/api/rest_v1/page/random/summary')
