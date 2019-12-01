@@ -1,10 +1,10 @@
 import React from 'react';
 import { Provider } from 'react-redux';
 import { BrowserRouter, Route } from 'react-router-dom';
-import CardList from './components/CardList/CardList';
-import Login from './components/Login/Login';
+import CardList from './components/CardList';
+import Login from './components/Login';
 import { store } from './store/store';
-import './App.css';
+import './App.scss';
 
 const App: React.FC = () => {
   return (

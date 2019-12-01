@@ -1,9 +1,8 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { IAppState, IArticle } from '../../types/state';
-import Card from '../Card/Card';
-import './CardList.css';
-import LoadButton from '../LoadButton/LoadButton';
+import { IAppState, IArticle } from '../types/state';
+import Card from './Card';
+import LoadButton from './LoadButton';
 
 interface CardListProps {
   cards: IArticle[];
