@@ -3,7 +3,8 @@ import { Link } from "react-router-dom";
 
 class Login extends React.Component {
     render() {
-        return <div>
+        return <div className="Login">
+            <h1>Wikipedia Random Articles</h1>
             <input type="text" />
             <input type="password" />
             <Link to="/list">Login</Link>
