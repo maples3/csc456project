@@ -1,13 +1,20 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './Card.css';
 
-export default class Card extends Component {
+interface CardProps {
+  title: string;
+  image?: string;
+  link: string;
+  preview: string;
+};
+
+export default class Card extends React.Component<CardProps> {
   render() {
     return (
       <div className="card">
-        <img src='https://anthonymapes.com/~anthony/overviewer/mapes-overworld-day-ne/base.png' />
-        <h2>Card</h2>
-        <p>This is a card</p>
+        { this.props.image !== undefined && <img src={this.props.image} alt="" /> }
+        <h2>{this.props.title}</h2>
+        <p>{this.props.preview}</p>
       </div>
     )
   }
