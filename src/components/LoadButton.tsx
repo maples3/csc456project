@@ -10,7 +10,7 @@ interface LoadButtonProps {
 
 class LoadButton extends React.Component<LoadButtonProps> {
     render() {
-        return <div>
+        return <div className="LoadButton">
             <button onClick={evt => this.handleClick(evt)}>
                 { this.props.loadMore? "Another!" : "Load an Article" }
             </button>
@@ -23,7 +23,7 @@ class LoadButton extends React.Component<LoadButtonProps> {
             .then( response => response.json(), error => console.log('An error occurred.', error))
             .then( json => //console.log(json)
                 myDispatcher(addArticle({
-                    title: json.displaytitle,
+                    title: json.title,
                     link: json.content_urls.desktop.page,
                     preview: json.extract,
                     image: json.originalimage.source
