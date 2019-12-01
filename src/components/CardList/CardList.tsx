@@ -1,22 +1,28 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { IAppState, ICard } from '../../types/state';
+import { IAppState, IArticle } from '../../types/state';
 import Card from '../Card/Card';
 import './CardList.css';
+import LoadButton from '../LoadButton/LoadButton';
 
 interface CardListProps {
-  cards: ICard[];
+  cards: IArticle[];
 };
 
 class CardList extends React.Component<CardListProps> {
   render() {
+    
+    let elements = this.props.cards.map((value) => (<Card key={value.title} title={value.title} link={value.link} preview={value.preview} image={value.image} />))
+    console.log("Elements: " + elements.length);
+    
     return (
       <div className="cardList">
-        {
-          this.props.cards.map((value) => <Card key={value.title} title={value.title} link={value.link} preview={value.preview} image={value.image} />)
-        }
+        <div>
+          { elements }
+        </div>
+        <LoadButton />
       </div>
-    )
+    );
   }
 };
 
