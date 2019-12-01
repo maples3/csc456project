@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "maples3.github.io/csc456project/static/css/main.ffac5c95.chunk.css",
+    "main.js": "maples3.github.io/csc456project/static/js/main.95a2ec49.chunk.js",
+    "main.js.map": "maples3.github.io/csc456project/static/js/main.95a2ec49.chunk.js.map",
+    "runtime-main.js": "maples3.github.io/csc456project/static/js/runtime-main.23b56033.js",
+    "runtime-main.js.map": "maples3.github.io/csc456project/static/js/runtime-main.23b56033.js.map",
+    "static/js/2.ab18f0b9.chunk.js": "maples3.github.io/csc456project/static/js/2.ab18f0b9.chunk.js",
+    "static/js/2.ab18f0b9.chunk.js.map": "maples3.github.io/csc456project/static/js/2.ab18f0b9.chunk.js.map",
+    "index.html": "maples3.github.io/csc456project/index.html",
+    "precache-manifest.e5cc1c2bfa351174a0cdd5354657e14b.js": "maples3.github.io/csc456project/precache-manifest.e5cc1c2bfa351174a0cdd5354657e14b.js",
+    "service-worker.js": "maples3.github.io/csc456project/service-worker.js",
+    "static/css/main.ffac5c95.chunk.css.map": "maples3.github.io/csc456project/static/css/main.ffac5c95.chunk.css.map"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.23b56033.js",
+    "static/js/2.ab18f0b9.chunk.js",
+    "static/css/main.ffac5c95.chunk.css",
+    "static/js/main.95a2ec49.chunk.js"
+  ]
+}
